@@ -15,15 +15,15 @@ and counting; velocyto (v0.17.17, `run10x`) was used to obtain spliced/unspliced
 
 ## Code
 
-| Script | Analysis | Figures |
-|---|---|---|
-| `code/01_preprocessing_integration.R` | QC, unified peak set, SCTransform, rPCA integration, ATAC LSI integration, WNN, UMAP, clustering | Fig. 1 |
-| `code/02_annotation_DE_DA.R` | Cluster annotation, marker genes, DE (EHC vs clusters 1, 4, 8), DA peaks, coverage plots | Fig. 1, Fig. 4, Fig. S2, Fig. S4 |
-| `code/03_chromatin_motif_chromVAR.R` | DAR genomic annotation, JASPAR2020 motif enrichment, chromVAR | Fig. 2 |
-| `code/04_export_for_velocity.R` | Export of the integrated object for Python | – |
-| `code/05_rna_velocity_cellrank.py` | scVelo RNA velocity, CellRank fate probabilities, lineage drivers, diffusion pseudotime, gene trends | Fig. 3, Fig. S3N |
-| `code/06_celloracle_input.R` | CellOracle RNA input and Cicero co-accessibility | Fig. 5 |
-| `code/07_celloracle.py` | Base GRN, cluster-specific GRNs, network centrality, FOXI1 overexpression simulation | Fig. 5 |
+| Script | Analysis |
+|---|---|
+| `code/01_preprocessing_integration.R` | QC, unified peak set, SCTransform, rPCA integration, ATAC LSI integration, WNN, UMAP, clustering |
+| `code/02_annotation_DE_DA.R` | Cluster annotation, marker genes, DE (EHC vs clusters 1, 4, 8), DA peaks, coverage plots |
+| `code/03_chromatin_motif_chromVAR.R` | DAR genomic annotation, JASPAR2020 motif enrichment, chromVAR |
+| `code/04_export_for_velocity.R` | Export of the integrated object for Python |
+| `code/05_rna_velocity_cellrank.py` | scVelo RNA velocity, CellRank fate probabilities, lineage drivers, diffusion pseudotime, gene trends |
+| `code/06_celloracle_input.R` | CellOracle RNA input and Cicero co-accessibility |
+| `code/07_celloracle.py` | Base GRN, cluster-specific GRNs, network centrality, FOXI1 overexpression simulation |
 
 Analyses added during revision (`revision_analyses/`):
 
