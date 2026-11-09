@@ -1,0 +1,46 @@
+software,version,environment,used_for
+Cell Ranger ARC,2.0.2,10x Genomics,"Alignment/counting, D45 (GRCh38-2020-A-2.0.0 reference)"
+Cell Ranger ARC,2.0.2,10x Genomics,"Alignment/counting, D50 (GRCh38-2020-A-2.0.0 reference)"
+Cell Ranger ARC,2.0.2,10x Genomics,"Alignment/counting, D55 (GRCh38-2020-A-2.0.0 reference)"
+R,4.2.2,R,Seurat/Signac analyses
+Seurat,5.1.0,R,"RNA/ATAC processing, rPCA integration, WNN, clustering, DE"
+SeuratObject,5.0.2,R,Seurat data structures
+Signac,1.13.0,R,"scATAC processing, peaks, motif enrichment, coverage plots"
+GenomicRanges,1.50.2,R,Unified peak set
+EnsDb.Hsapiens.v86,2.99.0,R,Gene annotation (Ensembl 86)
+biomaRt,2.54.0,R,Gene coordinates (Ensembl 98) for coverage plots
+BSgenome.Hsapiens.UCSC.hg38,1.4.5,R,hg38 genome sequence for motif analysis
+JASPAR2020,0.99.10,R,TF motif database
+TFBSTools,1.36.0,R,Motif matrix handling
+motifmatchr,1.20.0,R,Motif matching in peaks
+chromVAR,1.20.2,R,Per-cell TF motif deviation scores (Fig. 2C-D)
+ChIPseeker,1.34.1,R,Genomic annotation of DARs (Fig. 2A)
+TxDb.Hsapiens.UCSC.hg38.knownGene,3.16.0,R,Transcript annotation for ChIPseeker
+EnhancedVolcano,1.16.0,R,"Volcano plots (Fig. 4B, Fig. S2)"
+monocle3,1.3.1,R,Cicero input (CellOracle base GRN)
+cicero,1.3.9,R,Peak co-accessibility (CellOracle base GRN)
+Python,3.9.18,conda env RNAvelocity,scVelo/CellRank analyses
+velocyto,0.17.17,conda env RNAvelocity,Spliced/unspliced counts (loom)
+loompy,3.0.7,conda env RNAvelocity,Merging loom files
+scvelo,0.3.3.dev7+gbef8f1c,conda env RNAvelocity,RNA velocity (stochastic and dynamical models)
+cellrank,2.0.7,conda env RNAvelocity,"Fate probabilities, lineage drivers, gene trends (Fig. 3, Fig. S3N)"
+scanpy,1.9.8,conda env RNAvelocity,"PCA, neighbours, diffusion pseudotime"
+anndata,0.10.9,conda env RNAvelocity,Data structure
+pygam,0.9.1,conda env RNAvelocity,GAM gene trends (via CellRank)
+pygpcca,1.0.4,conda env RNAvelocity,GPCCA (via CellRank)
+numpy,1.26.3,conda env RNAvelocity,-
+scipy,1.13.1,conda env RNAvelocity,-
+pandas,2.2.2,conda env RNAvelocity,-
+matplotlib,3.8.0,conda env RNAvelocity,Plotting
+Python,3.10.19,HiPerGator module celloracle/0.20.0,CellOracle analyses
+celloracle,0.20.0,HiPerGator module celloracle/0.20.0,"Base GRN, cluster GRNs, in silico perturbation"
+scanpy,1.11.0,HiPerGator module celloracle/0.20.0,-
+anndata,0.10.8,HiPerGator module celloracle/0.20.0,-
+numpy,1.26.4,HiPerGator module celloracle/0.20.0,-
+pandas,1.5.3,HiPerGator module celloracle/0.20.0,-
+scipy,1.15.2,HiPerGator module celloracle/0.20.0,-
+scikit-learn,1.5.2,HiPerGator module celloracle/0.20.0,-
+gimmemotifs,0.17.2,HiPerGator module celloracle/0.20.0,Motif scan (default motifs gimme.vertebrate.v5.0)
+genomepy,0.16.3,HiPerGator module celloracle/0.20.0,hg38 genome download (UCSC)
+pybedtools,0.12.0,HiPerGator module celloracle/0.20.0,Peak-TSS annotation
+bedtools,2.30.0,HiPerGator module celloracle/0.20.0,Peak-TSS annotation
